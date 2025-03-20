@@ -1,0 +1,49 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-nav {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .app-nav-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .app-nav-brand a {
+    color: #1f2937;
+    text-decoration: none;
+  }
+  
+  .app-nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .app-nav-link {
+    color: #6b7280;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .app-nav-link:hover {
+    color: #1f2937;
+  }
+  
+  .app-main {
+    flex: 1;
+    background-color: #f3f4f6;
+    min-height: calc(100vh - 64px);
+  }
