@@ -17,7 +17,7 @@ const app = express();
 
 // CORS configuration - moved before other middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+  origin: ['http://localhost:5173', 'http://127.0.0.1:5173', 'https://email-assistant-3usn.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
   exposedHeaders: ['Content-Range', 'X-Content-Range'],
